@@ -18,11 +18,11 @@ namespace WebAPIDemo.Models
         /// <summary>
         /// 年龄
         /// </summary>
-        public int Age { get; set; }
+        public int? Age { get; set; }
         /// <summary>
         /// 性别
         /// </summary>
-        public bool Gender { get; set; }
+        public bool? Gender { get; set; }
         /// <summary>
         /// 薪酬
         /// </summary>

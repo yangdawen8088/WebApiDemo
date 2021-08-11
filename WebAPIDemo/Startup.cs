@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebAPIDemo.Services;
 
 namespace WebAPIDemo
 {
@@ -20,6 +21,8 @@ namespace WebAPIDemo
             {
                 setupAction.ReturnHttpNotAcceptable = true;
             });
+            // 注入服务 这是一个必须做的操作
+            services.AddTransient<IWorkerRepository, WorkerRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

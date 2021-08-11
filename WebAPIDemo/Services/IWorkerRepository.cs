@@ -6,7 +6,7 @@ using WebAPIDemo.Models;
 
 namespace WebAPIDemo.Services
 {
-    interface IWorkerRepository
+    public interface IWorkerRepository
     {
         /// <summary>
         /// 获取 Worker 数据，可以通过关键字检索(姓名)
@@ -20,6 +20,12 @@ namespace WebAPIDemo.Services
         /// <param name="workerId">workerId</param>
         /// <returns>Worker</returns>
         Worker GetWorker(Guid workerId);
+        /// <summary>
+        /// 更新数据
+        /// </summary>
+        /// <param name="worker">Worker</param>
+        /// <returns>Worker</returns>
+        Worker UpdateWorker(Worker worker);
         /// <summary>
         /// 新增 Worker
         /// </summary>
@@ -35,5 +41,11 @@ namespace WebAPIDemo.Services
         /// </summary>
         /// <param name="workers">Workers</param>
         void DeleteWorkers(IEnumerable<Worker> workers);
+        /// <summary>
+        /// 判断 workerId 所对应的 worker 是否存在
+        /// </summary>
+        /// <param name="workerId">workerId</param>
+        /// <returns>bool</returns>
+        bool WorkerExists(Guid workerId);
     }
 }

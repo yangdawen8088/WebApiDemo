@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Demo\\WebAPIDemo\\WebAPIDemo\\WebAPIDemo.csproj": {}
+    "E:\\我的学习资源\\Net\\WebApiDemo\\WebAPIDemo\\WebAPIDemo.csproj": {}
   },
   "projects": {
-    "D:\\Demo\\WebAPIDemo\\WebAPIDemo\\WebAPIDemo.csproj": {
+    "E:\\我的学习资源\\Net\\WebApiDemo\\WebAPIDemo\\WebAPIDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Demo\\WebAPIDemo\\WebAPIDemo\\WebAPIDemo.csproj",
+        "projectUniqueName": "E:\\我的学习资源\\Net\\WebApiDemo\\WebAPIDemo\\WebAPIDemo.csproj",
         "projectName": "WebAPIDemo",
-        "projectPath": "D:\\Demo\\WebAPIDemo\\WebAPIDemo\\WebAPIDemo.csproj",
+        "projectPath": "E:\\我的学习资源\\Net\\WebApiDemo\\WebAPIDemo\\WebAPIDemo.csproj",
         "packagesPath": "C:\\Users\\v-wenyang\\.nuget\\packages\\",
-        "outputPath": "D:\\Demo\\WebAPIDemo\\WebAPIDemo\\obj\\",
+        "outputPath": "E:\\我的学习资源\\Net\\WebApiDemo\\WebAPIDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\softwareInstallationPath\\Visual Studio 2019\\Shared\\NuGetPackages",
+          "D:\\Visual Studio2019\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
