@@ -34,7 +34,7 @@ namespace WebAPIDemo.Services
 
         public IEnumerable<Worker> GetWorkers(string keyWord)
         {
-            throw new NotImplementedException();
+            return DbWorker.DbWorkers.Where
         }
     }
 }
