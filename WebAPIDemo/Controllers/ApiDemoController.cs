@@ -21,12 +21,12 @@ namespace WebAPIDemo.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetDatasDemo([FromQuery] string keyWord = "")
+        public IActionResult GetDatasDemo([FromQuery] string keyWord)
         {
             return Ok(_workerRepository.GetWorkers(keyWord));
         }
         [HttpGet("{workerId}", Name = "GetDataDemo")]
-        public IActionResult GetDataDemo(Guid workerId)
+        public IActionResult GetDataDemo([FromRoute] Guid workerId)
         {
             return Ok(_workerRepository.GetWorker(workerId));
         }
@@ -35,12 +35,12 @@ namespace WebAPIDemo.Controllers
         {
             worker.Id = Guid.NewGuid();
             _workerRepository.AddWorker(worker);
-            return CreatedAtRoute("GetWorkerById", new { workerId = worker.Id }, worker);
+            return CreatedAtRoute("GetDataDemo", new { workerId = worker.Id }, worker);
         }
         [HttpDelete("{workerId}")]
         public IActionResult DeleteWorker([FromRoute] Guid workerId)
         {
-            if (_workerRepository.WorkerExists(workerId))
+            if (!_workerRepository.WorkerExists(workerId))
             {
                 return NotFound("需要删除的数据不存在");
             }
@@ -48,9 +48,13 @@ namespace WebAPIDemo.Controllers
             _workerRepository.DeleteWorker(worker);
             return NoContent();
         }
-        [HttpDelete("{workerIDs}")]
-        public IActionResult DeleteByIDs([FromRoute] IEnumerable<Guid> workerIDs)
+        [HttpDelete]
+        public IActionResult DeleteByIDs([FromBody] IEnumerable<Guid> workerIDs)
         {
+            if (workerIDs == null)
+            {
+                return NotFound("请选择删除的数据");
+            }
             List<Worker> workers = new List<Worker>();
             foreach (Guid workerId in workerIDs)
             {
@@ -62,7 +66,7 @@ namespace WebAPIDemo.Controllers
         [HttpPatch("{workerId}")]
         public IActionResult PartiallyUpdateWorker([FromRoute] Guid workerId, [FromBody] Worker worker)
         {
-            if (_workerRepository.WorkerExists(workerId))
+            if (!_workerRepository.WorkerExists(workerId))
             {
                 return NotFound("需要修改的数据不存在");
             }

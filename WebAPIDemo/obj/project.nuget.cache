@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GYCSWfRaC1C+9UpJMyKTcK/s0L0WQcuYNtl2iWF0ezqm9MzdFjktBD10tKL96Y1EwbfsUvDkoU4fwiVtEUhgpQ==",
+  "dgSpecHash": "D9xCszjYjhZq+jowg2C2i5Te4NuCTwsuWxLNzCPxpiJ+R8rOTEBTghikxsOmsaX3eMNX/RzWpY5fu/Nu/J3iig==",
   "success": true,
-  "projectFilePath": "E:\\我的学习资源\\Net\\WebApiDemo\\WebAPIDemo\\WebAPIDemo.csproj",
+  "projectFilePath": "D:\\Demo\\WebAPIDemo\\WebAPIDemo\\WebAPIDemo.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

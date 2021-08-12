@@ -8,7 +8,7 @@ namespace WebAPIDemo.Ddtabase
 {
     public class DbWorker
     {
-        public List<Worker> DbWorkers { get; set; }
+        public static List<Worker> DbWorkers { get; set; }
         /// <summary>
         /// 职工信息数据库
         /// </summary>
@@ -20,7 +20,7 @@ namespace WebAPIDemo.Ddtabase
             }
         }
 
-        private void InitializeWorkers()
+        private static void InitializeWorkers()
         {
             DbWorkers = new List<Worker>()
             {

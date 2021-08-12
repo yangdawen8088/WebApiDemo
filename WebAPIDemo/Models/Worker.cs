@@ -26,7 +26,7 @@ namespace WebAPIDemo.Models
         /// <summary>
         /// 薪酬
         /// </summary>
-        public decimal Salary { get; set; }
+        public decimal? Salary { get; set; }
         /// <summary>
         /// 部门
         /// </summary>

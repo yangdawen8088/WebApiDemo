@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\我的学习资源\\Net\\WebApiDemo\\WebAPIDemo\\WebAPIDemo.csproj": {}
+    "D:\\Demo\\WebAPIDemo\\WebAPIDemo\\WebAPIDemo.csproj": {}
   },
   "projects": {
-    "E:\\我的学习资源\\Net\\WebApiDemo\\WebAPIDemo\\WebAPIDemo.csproj": {
+    "D:\\Demo\\WebAPIDemo\\WebAPIDemo\\WebAPIDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\我的学习资源\\Net\\WebApiDemo\\WebAPIDemo\\WebAPIDemo.csproj",
+        "projectUniqueName": "D:\\Demo\\WebAPIDemo\\WebAPIDemo\\WebAPIDemo.csproj",
         "projectName": "WebAPIDemo",
-        "projectPath": "E:\\我的学习资源\\Net\\WebApiDemo\\WebAPIDemo\\WebAPIDemo.csproj",
+        "projectPath": "D:\\Demo\\WebAPIDemo\\WebAPIDemo\\WebAPIDemo.csproj",
         "packagesPath": "C:\\Users\\v-wenyang\\.nuget\\packages\\",
-        "outputPath": "E:\\我的学习资源\\Net\\WebApiDemo\\WebAPIDemo\\obj\\",
+        "outputPath": "D:\\Demo\\WebAPIDemo\\WebAPIDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Visual Studio2019\\Shared\\NuGetPackages",
+          "C:\\softwareInstallationPath\\Visual Studio 2019\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
